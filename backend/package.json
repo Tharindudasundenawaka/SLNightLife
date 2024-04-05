@@ -1,5 +1,6 @@
 {
   "name": "sl_night_life",
+  "type": "module",
   "version": "1.0.0",
   "description": "SlNightLife.lk",
   "main": "app.js",
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/Tharindudasundenawaka/SLNightLife#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2"
   },
   "devDependencies": {

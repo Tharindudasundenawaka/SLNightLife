@@ -1,9 +1,12 @@
 // const path = require("path")
-const express = require('express');
-const cors = require('cors');
-const bodyParser = require('body-parser');
+import express from'express';
+import cors from 'cors';
+import bodyParser from 'body-parser';
+import dotenv from 'dotenv'
+
+dotenv.config();
+
 const app = express();
-const port = 5000
 
 app.use(cors()) 
 
@@ -15,12 +18,12 @@ app.get('/api/hello', (req, res) => {
   });
 
 
-app.listen(port, () => {
-    console.log(`Running on port ${port}`);
+
+//Create Port
+const PORT = process.env.PORT || 2000;
+
+app.listen(PORT, () => {
+    console.log(`Server at running on the port: http://localhost:${PORT}`);
 })
 
 
-
-
-
-// .env
