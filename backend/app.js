@@ -1,15 +1,18 @@
 // const path = require("path")
-const express = require("express");
+const express = require('express');
+const cors = require('cors');
+const bodyParser = require('body-parser');
 const app = express();
 const port = 5000
-const bodyParser = require('body-parser');
+
+app.use(cors()) 
 
 //set bodyParser
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/', (req, res, next) => {
-    res.send("hello SlNightLife ");
-});
+app.get('/api/hello', (req, res) => {
+    res.send('Hello Worlds');
+  });
 
 
 app.listen(port, () => {
@@ -19,4 +22,5 @@ app.listen(port, () => {
 
 
 
-// app.use(cors()) 
+
+// .env
