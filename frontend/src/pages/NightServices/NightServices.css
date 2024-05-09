@@ -1,0 +1,126 @@
+
+.home-header {
+    font-family: "Sono", sans-serif;
+    text-align: center;
+    margin-top: 120px;
+    font-weight: bold;
+    color: #cb2b83;
+    font-size: 3rem;
+  }
+  
+  .home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 50px 50px;
+  }
+  
+  .home-card-body {
+    padding: 0px auto;
+    margin-bottom: 30px;
+    height: 24.5rem;
+  }
+  
+  .home-card-item {
+    width: 25rem;
+    height: 20rem;
+    max-width: 100%;
+    margin: 0rem;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #bc54bc;
+    background-color: #675353;
+  }
+  
+  .home-card-item:hover {
+    box-shadow: 0 0 20px #3d0662;
+    box-shadow: 20px #0520ef;
+  }
+  
+  .home-card-header {
+    text-align: center;
+    padding: 0rem;
+    margin-bottom: 20px;
+  }
+  
+  .home-card-title {
+    font-family: "Libre Baskerville", serif;
+    height: 20px;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    color: #eeeef3;
+    font-weight: bold;
+    margin-top: 0;
+    border-radius: 50px;
+  }
+  
+  .home-card-img-wrapper {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .home-card-img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .home-card-img-wrapper:hover .home-card-img {
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+    z-index: 1;
+  }
+  
+  .home-card-see-all {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #721152;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    width: 80%;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-top: 15px;
+    justify-content: center;
+  }
+  
+  .home-card-see-all:hover {
+    color: #0a8956;
+    font-weight: bold;
+    background-color: #051d37;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .home-header {
+      font-size: 2rem;
+      margin-top: 60px;
+    }
+  
+    .home-card-header {
+      font-size: 1.5rem;
+    }
+  
+  
+    .category-header {
+      margin-top: 8rem;
+    }
+  
+    .home-grid {
+      margin: 60px 10px;
+      margin-top: 80px;
+      gap: 0px;
+    }
+  
+    .home-card-see-all {
+      margin-left: 45px;
+      
+    }
+  }
+  
