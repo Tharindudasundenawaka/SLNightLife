@@ -14,5 +14,5 @@ const sellerSchema = new mongoose.Schema({
   }
 });
 
-const Seller = mongoose.model('Seller', sellerSchema);
+const Seller = mongoose.model('Seller', sellerSchema , 'Seller');
 export default Seller;

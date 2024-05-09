@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import Logo from "../../Pic/Logo.jpg";
+import Logo from "../../Pic/Logo.png";
 import { NavLink, useNavigate } from "react-router-dom";
-import Service from "../../Services";
+import Service from "../../ServiceCatogary";
 import "./NavBar.css";
 
 function Navbar({ onContactUsLinkClick }) {
@@ -81,7 +81,7 @@ function Navbar({ onContactUsLinkClick }) {
               setShowMenu(false);
             }}
           >
-            <img src={Logo} alt="Paint Shop Logo" />
+            <img src={Logo} alt="logo" />
           </NavLink>
         </div>
 
@@ -138,7 +138,7 @@ function Navbar({ onContactUsLinkClick }) {
 
             <li>
             <NavLink
-              to="/registation"
+              to="/signup"
               className="navbar-links li"
               activeClassName="active"
               onClick={() => {

@@ -1,9 +1,10 @@
-  .signup-container {
+ 
+.signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full viewport height */
-    background-image: url('../../Pic/peakpx\ \(3\).jpg'); /* Path to your background image */
+    /* background-image: url('../../Pic/peakpx\ \(3\).jpg'); */
     background-size: cover; /* Cover the entire container with the background image */
     background-position: center; /* Center the background image */
   }

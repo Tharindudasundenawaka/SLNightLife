@@ -4,7 +4,12 @@ import SharedLayout from "./components/SharedLayout/SharedLayout";
 import Home from "./pages/Home/Home";
 import SignUp from "./pages/SignUp/SignUp";
 import Login from "./pages/Login/Login";
+import UserDashBord from "./pages/UserDashbord/UserDashbord";
+import SelerDashBord from "./pages/SellerDashbord/SellerDashbord";
+import AdminDashBord from "./pages/AdminDashbord/AdminDashbord";
+import Services from "./pages/NightServices/NightServices";
 import Scroll from "./components/ScrollToTopButton/ScrollToTopButton";
+
 
 function App() {
   return (
@@ -13,9 +18,14 @@ function App() {
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
 
-          <Route path="registation" element={<SignUp />} />
+          <Route path="signup" element={<SignUp />} />
 
           <Route path="login" element={<Login />} />
+          
+          <Route path="user-dashboard" element={<UserDashBord />} />
+          <Route path="seller-dashboard" element={<SelerDashBord />} />
+          <Route path="admin-dashboard" element={<AdminDashBord />} />
+          <Route path="services" element={<Services />} />
           
 
           {/* <Route path="registation" element={<Register />} />

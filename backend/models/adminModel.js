@@ -8,5 +8,5 @@ const adminSchema = new mongoose.Schema({
   permissions: [{ type: String }] 
 });
 
-const Admin = mongoose.model('Admin', adminSchema);
+const Admin = mongoose.model('Admin', adminSchema, 'Admin');
 export default Admin;

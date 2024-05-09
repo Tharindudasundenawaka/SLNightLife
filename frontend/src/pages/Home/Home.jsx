@@ -1,11 +1,8 @@
-import React from 'react';
+import React from 'react'
 
 const Home = () => {
-    console.log('Home');
   return (
-    <div className='home'>
-       Home
-    </div>
+    <div>Home</div>
   )
 }
 
